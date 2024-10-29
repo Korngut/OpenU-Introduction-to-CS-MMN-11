@@ -4,6 +4,8 @@ public class MaxLine
     public static void main (String [] args)
     {
         Scanner scan = new Scanner (System.in);
+
+        // Get inputs:
         System.out.println("Enter first point coordinates:");
 
         int x1 = scan.nextInt();
