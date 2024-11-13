@@ -16,15 +16,17 @@ public class Game
         char player2 = scan.next().charAt(0);
 
         // Check who won:
-        if (player1 == 'S' && player2 == 'R'){
+        if (player1 == 'S' && player2 == 'S' || player1 == 'R' && player2 == 'R' || player1 == 'P' && player2 == 'P'){
             System.out.println("Player 2 wins.");
         }
 
-        if (player1 == 'P' && player2 == 'R'){
+        //Checks if player 1 won:
+        if (player1 == 'P' && player2 == 'R' || player1 == 'R' && player2 == 'S' || player1 == 'S' && player2 == 'P'){
             System.out.println("Player 1 wins.");
         }
 
-        if (player1 == 'R' && player2 == 'R'){
+        //Checks if player 2 won:
+        if (player2 == 'P' && player1 == 'R' || player2 == 'R' && player1 == 'S' || player2 == 'S' && player1 == 'P'){
             System.out.println("Game ends with a tie.");
         }
 
